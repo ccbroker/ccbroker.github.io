@@ -43,28 +43,24 @@
 		<div class="container">
 			<div class="services clearfix">
 				<div class="post">
-					<form>
-						<input type="hidden" name="project_name" value="cc broker">
-						<input type="hidden" name="admin_email" value="ccbrokerrnd@gmail.com">
-						<input type="hidden" name="form_subject" value="Заявка с сайта">
+					<form action="mail.php" method="POST">
 							<div class="ask_form">
 								<p>ВАШЕ ИМЯ:
-								<input type="text" name="Name" placeholder="Имя..."required>
+								<input type="text" name="user_name" placeholder="Имя..."required>
 								<br>
 							</div>
 							<div class="ask_form_second">	 <p>ЗАПРОС:
-								<textarea name="text" id="text" placeholder="Тип товара; от куда—куда; вес; фактурная стоимость ..."required></textarea>
+								<textarea name="user_quastion" placeholder= "Тип товара; от куда—куда; вес; фактурная стоимость ..." required></textarea>
 								<br>
 							</div>	
-						<button>ОТПРАВИТЬ</button>
+						<button type="submit" class="btn btn-primary">ОТПРАВИТЬ</button>
 					</form>
 				</div>	
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="js/script.js"></script>
 
-	<footer>
+		<footer>
 		<div class="contact">
 			<img src="img/mail.png" alt="mail" width="30"
 			align="left"><h3>CCBROKERRND@GMAIL.COM</h3>
